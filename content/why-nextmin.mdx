@@ -1,0 +1,32 @@
+---
+title: NextMin Features Overview
+sidebarTitle: Features Overview
+description: A concise overview of the features provided by nextmin-node and nextmin-react.
+---
+
+# NextMin Features Overview
+
+This page summarizes what the two packages provide. No extra site features—only package capabilities.
+
+## nextmin-node (server)
+
+- Express router via `createNextMinRouter(options)`
+- Auth routes: sign in, sign up, refresh token, forgot password
+- CRUD endpoints per schema with filtering/sorting/pagination
+- Authorization policies: roles, owner checks, read masks, write restrictions
+- File uploads/downloads with pluggable storage (local/S3) and MIME helpers
+- Database adapters: MongoDB (with index sync) and in‑memory (testing)
+- Schema service and hot reload support
+- Utilities: API key generator, default data seeding, schema loader
+
+Go to: [nextmin-node docs →](/docs/nextmin-node)
+
+## nextmin-react (client)
+
+- Provider and router primitives for admin apps
+- Ready pages: Auth, Dashboard, List, Create/Edit, Profile, Settings
+- Components: Sidebar, SchemaForm, FileUploader, Ref selects, Phone/Password inputs, tables and filters
+- Hooks/Utils: Google address autocomplete, list helpers, formatters
+- State slices for schemas and session
+
+Go to: [nextmin-react docs →](/docs/nextmin-react)

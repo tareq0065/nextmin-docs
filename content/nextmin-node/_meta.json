@@ -1,0 +1,17 @@
+{
+  "index": {
+    "title": "Overview"
+  },
+  "api-examples": {
+    "title": "API examples"
+  },
+  "search": {
+    "title": "Search API"
+  },
+  "storage": {
+    "title": "Storage Adapters"
+  },
+  "schema-examples": {
+    "title": "Schema guide"
+  }
+}
