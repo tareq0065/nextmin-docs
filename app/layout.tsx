@@ -27,6 +27,29 @@ export default async function RootLayout({
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'SoftwareApplication',
+              name: 'Nextmin',
+              applicationCategory: 'DeveloperApplication',
+              operatingSystem: 'Any',
+              offers: {
+                '@type': 'Offer',
+                price: '0',
+                priceCurrency: 'USD',
+              },
+              description: 'Production-ready Next.js admin template with a scalable Node.js backend. Ideally for startups and seamless full-stack development.',
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: '5',
+                ratingCount: '1',
+              },
+            }),
+          }}
+        />
       </Head>
       <body>
         <Layout
