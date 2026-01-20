@@ -11,7 +11,7 @@ export default {
     description:
       'Documentation for Nextmin packages: @airoom/nextmin-react and @airoom/nextmin-node.',
     // metadataBase can be set to your production docs URL when available
-    metadataBase: new URL('https://nextmin.airoom.dev/'),
+    // metadataBase: new URL('https://nextmin.airoom.dev/'),
     keywords: [
       // Branding & packages
       'Nextmin',
@@ -22,17 +22,6 @@ export default {
       'react admin',
       'save time with next js',
       'next js admin template',
-
-      // Strategy Founders & Investors
-      'SaaS Boilerplate',
-      'Startup Starter Kit',
-      'MVP Builder',
-      'Launch Fast',
-      'Admin Dashboard Template',
-      'Scalable Node.js Backend',
-      'Production Ready Codebase',
-      'Cost Efficient SaaS Development',
-      'Developer Productivity Tool',
 
       // Ecosystem
       'React',
@@ -91,7 +80,8 @@ export default {
       title: 'Nextmin',
     },
     openGraph: {
-      url: 'https://nextmin.airoom.dev/',
+      // https://github.com/vercel/next.js/discussions/50189#discussioncomment-10826632
+      url: './',
       siteName: 'Nextmin',
       locale: 'en_US',
       type: 'website',
@@ -103,7 +93,8 @@ export default {
       site: 'https://nextmin.gscodes.dev',
     },
     alternates: {
-      canonical: 'https://nextmin.airoom.dev/',
+      // https://github.com/vercel/next.js/discussions/50189#discussioncomment-10826632
+      canonical: './',
     },
   },
   /**

@@ -5,6 +5,14 @@ sidebarTitle: Changelogs
 
 # Release notes
 
+## 2026-01-21
+- **nextmin-node**: Robust Policy Lookups & Auth Improvements
+  - **Dot-notation Support**: Enhanced policy lookup logic to correctly resolve dot-notated role keys (e.g., `roles.admin`) within the schema's `access` policy.
+  - **Auth Response Enrichment**: Added `roleName` to the user object in `/login` and `/me` responses, simplifying role identification on the frontend.
+- **nextmin-react**: Improved Admin Experience
+  - **SchemaForm Robustness**: Updated privacy bypass logic to use `roleName` and case-insensitive role comparisons.
+  - **Fixed Admin Password Field**: Resolved an issue where the password field was hidden for admin users during account creation due to role name/ID mismatches.
+
 ## 2025-12-28
 - nextmin-react: Schema-driven Auto Slug Generation
   - **Auto-populate**: Introduced `populateSlugFrom` attribute to automatically generate slugs from other fields (e.g., `populateSlugFrom: "title"` or `populateSlugFrom: "firstName,lastName"`).
